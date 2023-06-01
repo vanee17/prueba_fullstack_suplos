@@ -13,7 +13,7 @@ Esta es una prueba para la vacante desarrollador PHP junior, la cual fue desarro
 ## Uso
 
 Para ejecutar este proyecto se debe utilizar el comando npm run serve despues de hacer la previa instalacion.
-## IMPORTANTRE 
+## IMPORTANTE 
 para que la actualización de estados funcione, se debe tener un archivo crontab con el siguiente comando : * * * * * cd /opt/lampp/htdocs/prueba_php_vue/prueba_backend_vue/ && /usr/bin/php actualizacion.php, EN CASO DEL USO DE OTRO SERVIDOR O CAMBOS EN EL NOMBRE DEL PROYECTO, SE DEBE AJUSTAR LA RUTA PARA QUE EL ARCHIVO PUEDA SER EJECUTADO
 
 

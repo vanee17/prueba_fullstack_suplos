@@ -134,7 +134,6 @@ export default {
         files: [],
         objeto: ''
       },
-      formData4:{},
       formData1:{
         objeto: '',
         descripcion: '',
