@@ -1,19 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" style="margin-top: 0;">
+    <v-app>
+      <v-card class="mx-auto overflow-hidden" height="64" width="100%">
+        <v-app-bar color="accent-4" dark>
+          <v-spacer></v-spacer>
+          <v-btn :to="{name: 'Principal_card'}">INICIO</v-btn>
+        </v-app-bar>
+      </v-card>
+      <router-view></router-view>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    data: () => ({
+      drawer: false,
+      group: null,
+    }),
+    watch: {
+      group () {
+        this.drawer = false
+      },
+    },
   }
-}
 </script>
 
 <style>
@@ -23,6 +33,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
